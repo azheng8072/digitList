@@ -3,10 +3,10 @@ package digit;
 public class digits {
     public Digits(int num)
     {
-        digitList = new ArrayList1();
+        digitList = new ArrayList<Integer>();
         if (num == 0)
         {
-            digitList.add(new Intefer(0));
+            digitList.add(new Integer(0));
         }
         while (num > 0)
         {
@@ -18,7 +18,7 @@ public class digits {
     {
         for (int i = 0; i < digitList.size()-1; i++)
         {
-            if (digitList.get(i).intValue() >= digitList.get(i+1).intValuse())
+            if (digitList.get(i).intValue() >= digitList.get(i+1).intValue())
             {
                 return false;
             }
